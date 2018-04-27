@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Digi';
+    src: URL('../fonts/digit/digit.ttf');
+}
+
+@font-face {
+    font-family: clockicons;
+    src: url(../fonts/clock/clock.ttf);
+}
+
+/* Remove text selection*/
+.remove-selection {
+/*body {*/
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.full-window {
+    /*border: 2px solid blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteiner-box {
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+}
+
+.clock-box {
+    /*border: 2px solid green;*/
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+
+    font-family: clockicons, Digi;
+    text-align: center;
+    color: grey;
+}
+
+#time {
+    /*border: 2px solid yellow;*/
+    font-size: 10rem;
+}
+
+#meridian {
+    /*border: 2px solid black;*/
+    font-size: 5rem;
+}
+
+.spinner-grey,
+.spinner-grey-only {
+  border-color: grey !important;
+}
+
+.alarm-box {
+    /*border: 2px solid blue;*/
+    text-align: center;
+    flex-grow:0;
+    
+}
+
+/* Hiding timepicker */
+#alarm-timepicker {
+    height: 0 !important;
+    width: 0 !important;
+}
